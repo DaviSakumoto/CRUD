@@ -8,7 +8,11 @@ function populaTabela(){
 
       dados.forEach(function(item){
           $("#tblDados tbody").append(`<tr>
-          <td></td>
+          <td>${item.ID}</td>
+          <td>${item.Nome}</td>
+          <td>${item.Sobrenome}</td>
+          <td>${item.DtNascimento}</td>
+          <td>${item.Formacao}</td>
           </tr>`);
       });
     }
